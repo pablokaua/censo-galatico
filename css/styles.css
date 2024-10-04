@@ -2,6 +2,31 @@ html {
     font-family: monospace;
 }
 
+.seach-container {
+    text-align: center;
+    padding: 10px;
+}
+
+#seach-input {
+    outline: none;
+    width: 50%;
+    padding: 10px;
+    font-size: 20px;
+} 
+
+#seach-button {
+    border: none;
+    width: 20%;
+    color: white;
+    background-color: #6c5ce7;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#seach-button:hover {
+    background-color: #a29bfe;
+}
+
 .title {
     font-size: 30px;
     text-align: center;
@@ -17,6 +42,10 @@ html {
     background-color: #ff7675;
     color: white;
     width: 100%;
+}
+
+.button-info:hover {
+    background-color: #fab1a0;
 }
 
 #result {

@@ -7,6 +7,18 @@ function getPlanetData(planet) {
     document.getElementById("terrain").textContent ="Terreno: " + planet.terrain 
 }
 
+function searchPlanet(planets){
+    let input = document.getElementById("seach-input").value.toLowerCase()
+
+    if(input !== ""){
+        planets.forEach(planet => {
+            if(planet.name.toLowerCase().includes(input)){
+                getPlanetData(planet)
+            }
+        })
+    } 
+}
+
 async function getAllPlanets(){
     let url = "https://swapi.dev/api/planets?format=json"
     let res = await fetch(url)
@@ -23,6 +35,12 @@ async function getAllPlanets(){
 
         result.appendChild(li)
     });
+
+    let search_button = document.getElementById("seach-button")
+
+    search_button.addEventListener("click", () => {
+        searchPlanet(results)
+    })
 }
 
 document.addEventListener("DOMContentLoaded", getAllPlanets)
