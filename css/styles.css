@@ -74,3 +74,25 @@ html {
 #planet-info > p {
     font-size: 15px;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    color: white;
+    font-size: 14px;
+    
+}
+
+
+th {
+    background-color: #2d3436;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+td {
+    background-color: #636e72;
+    padding: 10px;
+    border: 1px solid #ddd; 
+}
